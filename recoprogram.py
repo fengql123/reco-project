@@ -11,3 +11,6 @@ def recommendation():
     if choice == 'y':
         choice2 = catchoice()
         makechoice(choice2)
+
+
+recommendation()

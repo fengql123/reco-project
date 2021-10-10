@@ -6,13 +6,16 @@ def makechoice(choice):
     for item in choice:
         for thing in restaurant_data:
             if item == thing[0]:
+                print('')
                 print(thing[1])
                 print(f'Price Rating: {thing[2]}/5')
                 print(f'Food Rating: {thing[3]}/5')
                 print(f'Address: {thing[4]}')
+                print('')
     choice2 = input('Would you like to choose categories again?y/n')
     if choice2 == 'y':
         c = catchoice()
         makechoice(c)
     if choice2 == 'n':
+        print('')
         return print('Thank you for using this program!')
