@@ -1,7 +1,6 @@
-from data import types
-from data import restaurant_data
 from catchoice import catchoice
 from makechoice import makechoice
+from if_n import if_n
 
 
 def recommendation():
@@ -11,6 +10,8 @@ def recommendation():
     if choice == 'y':
         choice2 = catchoice()
         makechoice(choice2)
+    else:
+        if_n()
 
 
 recommendation()

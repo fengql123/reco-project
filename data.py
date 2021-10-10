@@ -44,3 +44,19 @@ restaurant_data = [['german', "Esther's German Saloon", '3', '3', '22 Teutonic A
                    ['pizza', 'When in Rome', '3', '2', '234 Valencia St.'],
                    ['pizza', 'Pizza 76', '4', '3', '76 Market St.'],
                    ['italian', 'Party Pasta', '5', '2', '70 E Main St']]
+
+
+f = restaurant_data
+for item in f:
+    item[0], item[3] = item[3], item[0]
+    item[0] = int(item[0])
+f.sort(reverse=True)
+
+
+def pricerank():
+    v = restaurant_data
+    for item in v:
+        item[0], item[2] = item[2], item[0]
+        item[0] = int(item[0])
+    v.sort()
+    return v
